@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /*
+        This is Nav bar Styling.
+        */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color:rgb(194, 210, 211);
+}
+
+
+        /*
+        This is Header Styling.
+        */
+header{
+    background-color: rgb(32, 32, 114);
+    color: white;
+    height: 25px;
+    text-align: left;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+        /*
+        This is Div bar Styling using the id.
+        */
+
+   #div1 ,#div2 ,#div3 ,#div4 ,#div5{
+ border: 5px;
+ border-color: black;
+ background-color: rgb(136, 130, 163);
+ margin:10px;
+ padding: 10px;
+   }
+
+
+        /*
+        This is Div Styling using the Class.
+        */
+.div6 {
+    background-color: wheat;
+    color: brown;
+    border:5px;
+    margin: 10px;
+    padding:10px;
+}
+
+        /*
+        This is Footer Styling.
+        */
+footer {
+background-color: rgb(32,32,114);
+color :white;
+text-align: center;
+height: 20px;
+margin: 10px;
+}
+
+
+    </style>
+</head>
+<body>
+
+
+    <!--
+        Navigation Bar for Mastek page
+    -->
+    <ul>
+        <li><a href="https://www.mastek.com/" style="color: blue; font-size: 30px;">Mastek</a></li>
+    
+        <li><input type="text" placeholder="Search.." style="margin:11% "></li>
+      
+    </ul>
+
+<!--
+    Header
+-->
+
+<header><b style="font-size: larger;">My Profile</b></header>
+
+    <img src="D:\Training\UI\HTML5\Udemy\images\img2.jpg" alt="User Photo" height="100px" width="50px">
+
+    <h1>Rohan Shingate</h1>
+
+     <!--
+        Div 1 for :Trainee Software Engineer
+    -->
+
+    <div id="div1">
+        <h2>Trainee Software Engineer</h2>
+ <input type="email" name="email" placeholder="Email"><br><br>
+ <input type="number" name="phoneno"  placeholder="Phone-No"> 
+ <h4>About Me</h4>
+ <textarea></textarea>
+ <h4>Certifications</h4>
+ <textarea></textarea>   
+
+     </div>
+<!--
+        Div 2 for :Employment Details
+    -->
+
+    <div  id="div2">
+<h2>Employment Details</h2>
+
+<p>Employee No.</p>
+<input type="text" name="employeeno" placeholder="14923">
+<p>Service Line</p>
+<input type="text" name="serviceline" placeholder="SL_Application Development">
+<p>Unit</p>
+<input type="text" name="unit" placeholder="CF-Talent Management Trainees">
+<p>Cost Center</p>
+<input type="text" name="costcenter" placeholder="CF-Talent Acquisition">
+<p>Area</p>
+<input type="text" name="area" placeholder="Mumbai">
+<p>Sub Area</p>
+<input type="text" name="subarea" placeholder="Mahape">
+<p>Grade</p>
+<input type="text" name="grade" placeholder="T2">
+<p>Unit HR</p>
+<input type="text" name="hr" placeholder="Not Available">
+<p>Date of Joining</p>
+<input type="date" name="dateofjoining" placeholder="17 May 2021">
+
+
+</div>
+
+<!--
+        Div 3 for :Personal Information
+    -->
+    
+
+<div id="div3">
+<h2>Personal Information</h2>
+<p>Gender</p>
+<select >
+    <option value="Male">Male</option>
+    <option value="Male">Female</option>
+    <option value="Male">Others</option>
+</select>
+<p>Birthday</p>
+<input type="date" name="birthday" placeholder="25 Apr 1998">
+<p>Other Details:</p>
+<ul>
+<li>Passport/Visa Details</li>
+<li>Family Details</li>
+</ul>
+
+
+
+<!--
+        Div 4 for :Contact Information
+    -->
+    
+</div>
+
+<div id="div4">
+<h2>Contact Information</h2>
+<p>Personal Email id</p>
+<input type="email" name="personalemailid" >
+<p>Residence No</p>
+<input type="text" name="residenceno">
+<p>Current Address</p>
+<textarea></textarea>
+</div>
+
+
+<!--
+        Div 5 for :Emergency Details
+    -->
+
+<div id="div5">
+<h2>Emergency Details</h2>
+<p>Blood Group</p>
+<select>
+    <option value="AB+">A+</option>
+    <option value="AB+">A-</option>
+    <option value="AB+">B+</option>
+    <option value="AB+">B-</option>
+    <option value="AB+">AB+</option>
+    <option value="AB+">AB-</option>
+    <option value="AB+">O+</option>
+    <option value="AB+">O-</option>
+</select>
+<p>Emergency Contact Name</p>
+<input type="text" name="emergencycontactname">
+<p>Emergency Contact No</p>
+<input type="number" name="emergencycontactno">
+</div>
+
+
+<!--
+        Div 6 for :Disclaimer
+    -->
+
+<div class="div6">
+<p>
+    Disclaimer : Your privacy is important to us.
+     Mastek uses the personal data provided by you 
+     on this form for the 
+     organizations internal processing requirement
+      as part your employment.
+      We will use your data for the organizations 
+      communication and notification.
+       We will share your data with Mastek controlled
+        affiliates and subsidiaries;
+        with vendors working on our behalf; when required
+         by law or to respond to
+         legal process; to protect our customers ; to 
+         protect lives; to maintain
+          the security of our services; and to protect
+           the right of property or
+           Mastek. Mastek is committed to protecting the
+            security of your personal
+            data. Mastek requests you to inform us about
+             any changes to your
+             personal data via an email to your respective
+     Human Resource personal or by sending 
+     an email to <a href="PIIdatamodification@mastek.com"> PIIdatamodification@mastek.com </a>.
+</p>
+
+</div>
+
+<footer>&copy Copyright 2016-2021. All rights reserved.</footer>
+</body>
+</html>
