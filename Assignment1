@@ -1,4 +1,6 @@
-Making of the Profile page like MastekNet:
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,13 +12,17 @@ Making of the Profile page like MastekNet:
 
     <style>
 
+
+body{
+    background-color: whitesmoke;
+}
         /*
         This is Nav bar Styling.
         */
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 10 px;
   overflow: hidden;
   background-color:white;
 }
@@ -55,24 +61,33 @@ header{
         This is Div bar Styling using the id.
         */
 
-   #div1 ,#div2 ,#div3 ,#div4 ,#div5{
- border: 5px;
+   #div1 ,#div2 ,#div3 ,#div4 ,#div5 ,#div6{
+ border: 1px;
+ border-style: solid;
  border-color: black;
- background-color: rgb(136, 130, 163);
- margin:10px;
- padding: 10px;
+ background-color:white;
+ margin:25px;
+ padding:15px;
+/*  
+Three column making in a row
+*/
+ width:26%;
+    height: 730px;
+    float:left;
    }
 
 
         /*
-        This is Div Styling using the Class.
+        This is Div7 Styling using the Class.
         */
-.div6 {
+.div7 {
     background-color: wheat;
     color: brown;
-    border:5px;
-    margin: 10px;
-    padding:10px;
+    border:1px;
+    border-style: solid;
+    border-color: black;
+    margin: 25px;
+    padding:15px;
 }
 
         /*
@@ -87,6 +102,22 @@ margin: 10px;
 }
 
 
+.row::after {
+    display: table;
+content: "";
+clear: both;
+                
+}
+
+
+img{
+    padding: 5px;
+    margin: 5px;
+}
+
+.ullist{
+    list-style-type: circle;
+}
     </style>
 </head>
 <body>
@@ -106,16 +137,16 @@ margin: 10px;
     Header
 -->
 
-<header><b style="font-size: larger;">My Profile</b></header>
+<header><b style="font-size: larger; padding-left: 10%;">My Profile</b></header>
 
-    <img src="D:\Training\UI\HTML5\Udemy\images\img2.jpg" alt="User Photo" height="100px" width="50px">
+    <img src="D:\Training\UI\HTML5\Udemy\images\img2.jpg" alt="User Photo" height="100px" width="50px" >
 
     <h1>Rohan Shingate</h1>
 
      <!--
         Div 1 for :Trainee Software Engineer
     -->
-
+<div class="row">
     <div id="div1">
         <h2>Trainee Software Engineer</h2>
  <input type="email" name="email" placeholder="Email"><br><br>
@@ -156,11 +187,31 @@ margin: 10px;
 </div>
 
 <!--
-        Div 3 for :Personal Information
+        Div 3 for :Organization Information
     -->
+<div id="div3">
+    <h2>Organization</h2>
+   
+
+    <ul class="ullist">
+         <li>Ashank Desai</li><br>
+         <li>Maninder Kapoor Puri</li><br>
+         <li>Girish Kulkarni</li><br>
+         <li>Joel J. Luis</li><br>
+         <li>Rohan Shingate</li><br>
+    </ul>
+    
+    </div>
     
 
-<div id="div3">
+</div>
+
+<!--
+        Div 4 for :Personal Information
+    -->
+    
+<div class="row">
+<div id="div4">
 <h2>Personal Information</h2>
 <p>Gender</p>
 <select >
@@ -176,15 +227,13 @@ margin: 10px;
 <li>Family Details</li>
 </ul>
 
-
-
-<!--
-        Div 4 for :Contact Information
-    -->
-    
 </div>
 
-<div id="div4">
+<!--
+        Div 5 for :Contact Information
+    -->
+    
+<div id="div5">
 <h2>Contact Information</h2>
 <p>Personal Email id</p>
 <input type="email" name="personalemailid" >
@@ -196,10 +245,10 @@ margin: 10px;
 
 
 <!--
-        Div 5 for :Emergency Details
+        Div 6 for :Emergency Details
     -->
 
-<div id="div5">
+<div id="div6">
 <h2>Emergency Details</h2>
 <p>Blood Group</p>
 <select>
@@ -218,14 +267,15 @@ margin: 10px;
 <input type="number" name="emergencycontactno">
 </div>
 
+</div>
 
 <!--
-        Div 6 for :Disclaimer
+        Div 7 for :Disclaimer
     -->
 
-<div class="div6">
+<div class="div7">
 <p>
-    Disclaimer : Your privacy is important to us.
+   <b> Disclaimer :</b> Your privacy is important to us.
      Mastek uses the personal data provided by you 
      on this form for the 
      organizations internal processing requirement
@@ -250,6 +300,7 @@ margin: 10px;
 </p>
 
 </div>
+
 
 <footer>&copy Copyright 2016-2021. All rights reserved.</footer>
 </body>
